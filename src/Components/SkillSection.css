@@ -1,0 +1,44 @@
+.skillContainer{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px; 
+    
+    
+    
+}
+.skill-item{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    border-bottom: 3px solid #0edd98;
+
+}
+
+.skill-bar {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border: 2px solid sienna;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .skill-logo {
+    margin-right: 10px;
+    padding: 0;
+  }
+  
+  .skill-logo img {
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }

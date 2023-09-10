@@ -1,0 +1,102 @@
+.about-container{
+    display: flex;
+flex-direction: column;
+height: 100vh;
+margin-top: 30px ;
+color: white;
+
+}
+
+.image-about{
+   
+    flex: 2;
+    display: flex;
+    
+   
+    justify-content:left ;
+    padding: 0;
+    align-items: center;
+    height: 80%;
+   
+}
+.my-photo{
+
+    width: 80%;
+    height: 80%;
+    padding: 10px 0px;
+    margin: 0;
+    flex-wrap: wrap;
+    object-fit:contain;    
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.decription-about{
+    flex: 1;
+    padding: 30px;
+    height: 50%;
+    padding: 0;
+}
+.RRR{
+    display: none;
+}
+@media (max-width: 768px) {
+    .RRR{
+        display:flex;
+        flex-direction: column;
+        padding: 0;margin: 0;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .RRR span{
+        color: #8796AB;
+    }
+    .about-container{
+        display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    margin-top: 30px ;
+    color: white;
+    
+    }
+    .image-about{
+   
+        flex: 2;
+        display: flex;
+        justify-content:center ;
+        padding: 0px;
+        align-items: center;
+        height: 0%;
+        padding: 0;margin: 0;
+        margin-top: 10px;
+       
+    }
+    .my-photo{
+        width: 80%;
+        height: 80%;
+        padding: 0px 0px;
+        margin: 0;
+        flex-wrap: wrap;
+       
+        object-fit:contain;
+       
+        
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+    }
+    .decription-about{
+        margin: 0;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        flex: 0;
+        padding: 0%;
+        padding: 0;
+        padding: 15px;
+    } 
+    .BBB {
+        flex: 1;
+        padding: 30px;
+        height: 50%;
+        padding: 0;
+        display: none;
+    } 
+}
