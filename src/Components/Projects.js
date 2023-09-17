@@ -20,13 +20,15 @@ const Projects = () => {
         </div>
         <div className="project-details">
           <div className="project-description">
-            <h1>
+            <a className="linkClass" href="https://eggsquare.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer">
               Egg Square 
               <FontAwesomeIcon
                 className=" fa-solid fa-wifi fa-spin project-icon "
                 icon={faWifi}
               />
-            </h1>
+            </a>
             <p>
               "For a valued client, I designed and deployed a MERN-based egg
               delivery platform, optimizing user registration, secure payments,
@@ -60,13 +62,17 @@ const Projects = () => {
         </div>
         <div className="project-details">
           <div className="project-description">
-            <h1>
+        
+
+<a className="linkClass" href="https://rapidcar.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer">
               Rapid - Car Rental Platform
               <FontAwesomeIcon
                 className=" fa-solid fa-wifi fa-spin project-icon "
                 icon={faWifi}
               />
-            </h1>
+            </a>
             {/* <span>Senior enginner</span> */}
             <p>
               Developed responsive platform with MongoDB, Express.js, React.js,

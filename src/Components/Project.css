@@ -92,7 +92,15 @@ margin: 0;
     font-weight: 300;
     font-size: 15px; /* Add the desired font size */
   }
+.linkClass{
+  /* display: none; */
+  color: #c5c5c5;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0;margin: 0;
+ 
 
+}
   .project-container:hover .project-details p  {
  /* Add the desired color */
   /* color: #15ce25; */
@@ -103,12 +111,18 @@ margin: 0;
 
      color: rgb(216, 199, 199);
    }
-.project-container:hover .project-description h1{
-
-    color: #15ce25; /* Add the desired color */
+.project-container:hover .project-description  h1{
+  color: #15ce25;
+    color: #7621ff; /* Add the desired color */
     background-color: none;
   }
-
+  .project-container:hover .linkClass{
+  color: #15ce25;
+  padding: 5px;
+  border-radius: 10px;
+  /* Add the desired color */
+  background-color: #37476D;
+}
 
 .project-image {
     width: 300px; /* Adjust the width as per your requirements */
