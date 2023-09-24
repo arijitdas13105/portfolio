@@ -9,7 +9,7 @@ const Experience = () => {
     <div className="experience-container">
      
       <div className="time-frame">
-        <p>jan, 2023 - March, 2023</p>
+        <p>Aug, 2022 - Oct, 2022</p>
       </div>
       <div className="work-details">
         <div className="work-description">
