@@ -29,8 +29,16 @@ const Projects = () => {
                 icon={faWifi}
               />
             </a>
-            <p>
+            {/* <p>
               "For a valued client, I designed and deployed a MERN-based egg
+              delivery platform, optimizing user registration, secure payments,
+              real-time notifications, and responsive design, resulting in
+              increased customer satisfaction. Utilized Node.js, Express.js,
+              MongoDB, Razorpay, React, Redux, Axios, and CSS for full-stack
+              development
+            </p> */}
+            <p>
+              "I designed and deployed a MERN-based egg
               delivery platform, optimizing user registration, secure payments,
               real-time notifications, and responsive design, resulting in
               increased customer satisfaction. Utilized Node.js, Express.js,
