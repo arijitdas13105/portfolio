@@ -25,8 +25,10 @@ const Skills = () => {
       { name: "ExpressJS", images: images.expressjs },
       { name: "MongoDB", images: images.mongodb },
       { name: "Bootstrap", images: images.bootstrap },
+      { name: "TailwindCSS", images: images.tailwindCSS },
     ],
     tools: [
+      { name: "Firebase", images: images.firebase },
       { name: "Git", images: images.git },
       { name: "GitHub", images: images.github },
       { name: "Docker", images: images.docker },
@@ -77,7 +79,25 @@ const Skills = () => {
             </div>
           )}
         </div>
+        <div className={`skills-headline ${toolsOpen ? "open" : ""}`}>
+          <span className="heading" onClick={toggleTools}>
+            Tools
+            <FontAwesomeIcon
+              icon={toolsOpen ? faCircleChevronDown : faCircleChevronUp}
+              className="updown-icon"
+            />
+          </span>
 
+         
+
+          {toolsOpen && (
+            <div className={`skill-list ${toolsOpen?"open2":""}`}>
+              {skills.tools.map((skill, i) => (
+                <SkillSection key={i} name={skill.name} images={skill.images} />
+              ))}
+            </div>
+          )}
+        </div>
         {/* //framework */}
         <div className={`skills-headline ${framerworkOpen ? "open" : ""}  `}>
           <span className="heading" onClick={toggleFramerwork}>
@@ -106,25 +126,7 @@ const Skills = () => {
 
         {/* // tools */}
 
-        <div className={`skills-headline ${toolsOpen ? "open" : ""}`}>
-          <span className="heading" onClick={toggleTools}>
-            Tools
-            <FontAwesomeIcon
-              icon={toolsOpen ? faCircleChevronDown : faCircleChevronUp}
-              className="updown-icon"
-            />
-          </span>
-
-         
-
-          {toolsOpen && (
-            <div className={`skill-list ${toolsOpen?"open2":""}`}>
-              {skills.tools.map((skill, i) => (
-                <SkillSection key={i} name={skill.name} images={skill.images} />
-              ))}
-            </div>
-          )}
-        </div>
+        
       </div>
     </div>
   );

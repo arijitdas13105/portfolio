@@ -2,10 +2,14 @@ import React from "react";
 import "./Experience.css";
 import { Element } from "react-scroll";
 
+
+
+
 const Experience = () => {
   return (
     <>
-     <h1 className="text">Experience</h1>
+    <div  style={{marginTop:'-10px'}} >
+    <h1 className="text">Experience</h1>
     <div className="experience-container">
      
       <div className="time-frame">
@@ -31,6 +35,8 @@ const Experience = () => {
         <div className="work-technologies"></div>
       </div>
     </div>
+    </div>
+     
     </>
   );
 };

@@ -22,9 +22,12 @@ import {
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import RandomTextEffect from "./RandomTextEffect";
 
 const Hero = () => {
-  const [activeTab, setActiveTab] = useState("About")
+  // const initialText="Arijit das"
+  const [activeTab, setActiveTab] = useState("About");
+  
 
   return (
     <div className="Hero-container">
@@ -32,7 +35,8 @@ const Hero = () => {
 
       <div className="Hero-left">
         <div className="hero-left-details">
-          <h1>Arijit Das</h1>
+        
+          <RandomTextEffect initialText="ARIJIT DAS" />
           <p className="SSS" style={{ color: "#8796AB", marginLeft: "15px" }}>
             Student @IIIT Gwalior
           </p>
@@ -44,7 +48,7 @@ const Hero = () => {
               <Link
                 to="about"
                 smooth={true}
-                duration={500}
+                duration={1000}
                 spy={true}
                 activeClass="active"
               >
@@ -55,7 +59,7 @@ const Hero = () => {
               <Link
                 to="experience"
                 smooth={true}
-                duration={500}
+                duration={1500}
                 spy={true}
                 activeClass="active"
               >
@@ -67,7 +71,7 @@ const Hero = () => {
               <Link
                 to="skills"
                 smooth={true}
-                duration={500}
+                duration={1500}
                 spy={true}
                 activeClass="active"
               >
@@ -78,14 +82,13 @@ const Hero = () => {
               <Link
                 to="projects"
                 smooth={true}
-                duration={500}
+                duration={1500}
                 spy={true}
                 activeClass="active"
               >
                 Projects
               </Link>
             </li>
-            
           </ul>
         </nav>
 
@@ -136,15 +139,13 @@ const Hero = () => {
           <Element name="skills">
             <Skills />
           </Element>
-          
+
           <Element name="projects">
             <Projects />
           </Element>
-          
+
           <Contact />
         </div>
-
-        
       </div>
     </div>
   );

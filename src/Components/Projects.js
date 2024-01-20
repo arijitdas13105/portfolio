@@ -5,103 +5,82 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWifi } from "@fortawesome/free-solid-svg-icons";
 
 import "./Project.css";
+import ProjectContainer from "./ProjectContainer";
+import { images } from "./images";
 
 const Projects = () => {
+  const projectsData = [
+    {
+      id: 1,
+      imageSrc:images.eggSquare,
+      // imageSrc:
+      //   "https://www.freevector.com/uploads/vector/preview/282/FreeVector-Cracked-Egg-Vector.jpg",
+      projectUrl: "https://eggsquare.vercel.app/",
+      projectName: "Egg Square",
+      description:
+"Developed NetflixGPT with precision, leveraging React, Firebase, Redux Toolkit, and Tailwind CSS. Seamlessly integrated GPT for personalized movie recommendations, prioritizing meticulous code structure, reusability, and maintainability.Elevating user experience through cutting-edge technology and meticulous development",
+      technologies: [
+        "MongoDB",
+        "React",
+        "Express",
+        "Nodejs",
+        "Redux",
+        "CSS",
+        "Responsive Design",
+      ],
+    },
+    // {
+    //   id: 2,
+    //   imageSrc:
+    //     "https://www.fleetroot.com/wp-content/uploads/2020/08/how-to-create-a-powerful-car-rental-business-website-1.jpg",
+    //   projectUrl: "https://rapidcar.vercel.app/",
+    //   projectName: "Rapid - Car Rental Platform",
+    //   description:
+    //     "Developed responsive platform with MongoDB, Express.js, React.js, Node.js. Features: vehicle inventory, user authentication, booking system, payment integration, admin dashboard. Showcased MERN stack expertise, delivering user-friendly car rentals.",
+    //   technologies: ["MongoDB", "React", "Express", "Nodejs", "Redux", "Ant Design"],
+    // },
+    // ,
+    {
+      id: 3,
+      imageSrc:images.netflixGPT,
+      // imageSrc:
+      //   "https://www.fleetroot.com/wp-content/uploads/2020/08/how-to-create-a-powerful-car-rental-business-website-1.jpg",
+      projectUrl: "https://netflixgptt.vercel.app/",
+      projectName: "Netflix-GPT",
+      description:
+        "Developed responsive platform with MongoDB, Express.js, React.js, Node.js. Features: vehicle inventory, user authentication, booking system, payment integration, admin dashboard. Showcased MERN stack expertise, delivering user-friendly car rentals.",
+      technologies:
+       [ "React",
+       "Firebase",
+       "Redux Toolkit",
+       "Tailwind CSS",
+       "Responsive Design",],
+    },
+  ];
   return (
-    <div className="project-holder">
+    <>
+   
       <h1 className="heading-project">projects</h1>
-      
-      <div className="project-container">
-        <div className="project-image">
-          <img
-            src="https://www.freevector.com/uploads/vector/preview/282/FreeVector-Cracked-Egg-Vector.jpg"
-            alt="image-project"
+      {/* <ProjectContainer description="sdds" technologies="d" /> */}
+      {
+        projectsData.map((project)=>(
+         <ProjectContainer 
+         key={project.id}
+         imageSrc={project.imageSrc}
+         projectUrl={project.projectUrl}
+         projectName={project.projectName}
+         description={project.description}
+         technologies={project.technologies}
           />
-        </div>
-        <div className="project-details">
-          <div className="project-description">
-            <a className="linkClass" href="https://eggsquare.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer">
-              Egg Square 
-              <FontAwesomeIcon
-                className=" fa-solid fa-wifi fa-spin project-icon "
-                icon={faWifi}
-              />
-            </a>
-            {/* <p>
-              "For a valued client, I designed and deployed a MERN-based egg
-              delivery platform, optimizing user registration, secure payments,
-              real-time notifications, and responsive design, resulting in
-              increased customer satisfaction. Utilized Node.js, Express.js,
-              MongoDB, Razorpay, React, Redux, Axios, and CSS for full-stack
-              development
-            </p> */}
-            <p>
-              "I designed and deployed a MERN-based egg
-              delivery platform, optimizing user registration, secure payments,
-              real-time notifications, and responsive design, resulting in
-              increased customer satisfaction. Utilized Node.js, Express.js,
-              MongoDB, Razorpay, React, Redux, Axios, and CSS for full-stack
-              development
-            </p>
-          </div>
-          <div className="work-technologies">
-            <ul>
-              <li>MongoDB</li>
-              <li>React</li>
-              <li>Express</li>
-              <li>Nodejs</li>
-              <li>Redux</li>
-              <li>Redux</li>
-              <li>CSS</li>
-              <li>Responsive Design</li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div className="project-container">
-        <div className="project-image">
-          <img
-            src="https://www.fleetroot.com/wp-content/uploads/2020/08/how-to-create-a-powerful-car-rental-business-website-1.jpg"
-            alt="image-project"
-          />
-        </div>
-        <div className="project-details">
-          <div className="project-description">
-        
 
-<a className="linkClass" href="https://rapidcar.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer">
-              Rapid - Car Rental Platform
-              <FontAwesomeIcon
-                className=" fa-solid fa-wifi fa-spin project-icon "
-                icon={faWifi}
-              />
-            </a>
-            {/* <span>Senior enginner</span> */}
-            <p>
-              Developed responsive platform with MongoDB, Express.js, React.js,
-              Node.js. Features: vehicle inventory, user authentication, booking
-              system, payment integration, admin dashboard. Showcased MERN stack
-              expertise, delivering user-friendly car rentals.
-            </p>
-          </div>
-          <div className="work-technologies">
-            <ul>
-              <li>MongoDB</li>
-              <li>React</li>
-              <li>Express</li>
-              <li>Nodejs</li>
-              <li>Redux</li>
-              <li>Ant Design</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+        ))
+      }
+
+    
+</>
+
+    
   );
 };
 

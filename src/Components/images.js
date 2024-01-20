@@ -16,5 +16,9 @@ export const images={
     me:require('../images/me.png'),
     mee:require('../images/mee.jpg'),
     mes:require('../images/mes.png'),
-    mongodb:require('../images/mongodb.png')
+    mongodb:require('../images/mongodb.png'),
+    firebase:require('../images/firebase.png'),
+    eggSquare:require('../images/EggSquare.png'),
+    netflixGPT:require('../images/netflixGPT.png'),
+    tailwindCSS:require('../images/tailwindCSS.png'),
 }

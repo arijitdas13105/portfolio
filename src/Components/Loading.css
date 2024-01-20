@@ -1,0 +1,154 @@
+/* LoadingComponent.css */
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(31, 7, 7, 0.8); */
+    background-color: #0F172A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* Place the loader above other content */
+    background: linear-gradient(to right, #0F172A, #2a3b36, #432c52);
+  }
+  
+  .loader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .loader::before {
+    content: "";
+    background: rgba(255, 255, 255, 0);
+     backdrop-filter: blur(8px);
+    position: absolute;
+    width: 180px;
+    height: 65px;
+    z-index: 20;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    border-top: none;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.082);
+    animation: anim2 2s infinite;
+    border-top: 1px solid rgb(245, 129, 129);
+  }
+  
+  .loader div {
+    background: rgb(228, 228, 228);
+    border-radius: 50%;
+    width: 20px;
+    height: 25px;
+    z-index: -1;
+    animation: anim 2s infinite linear;
+    animation-delay: calc(-0.3s * var(--i));
+    transform: translateY(5px);
+    margin: 0.2em;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: rgb(0, 0, 0);
+  }
+  .load-text{
+    font-weight: 500;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    margin-left: 10px;
+  }
+  
+  @keyframes anim {
+    0%, 100% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-65px);
+    }
+  }
+  
+  @keyframes anim2 {
+    0%, 100% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+  
+
+  /* LoadingRing.css */
+.loading-ring {
+    counter-reset: p var(--p);
+    mix-blend-mode: lighten;
+    animation: pulse 6s linear infinite;
+  }
+  
+  .loading-ring::before,
+  .loading-ring::after {
+    background: linear-gradient(-45deg, #000000, #fd954e);
+  }
+  
+  .loading-ring::before {
+    --x: 1.25em;
+    --y: 1.25em;
+    --r: calc(100% - 0.2em);
+    --rond: red calc(0.5em - 1px), #00000000 0.5em;
+    --mask: radial-gradient(circle at var(--x) var(--y), var(--rond)),
+      radial-gradient(
+        closest-side,
+        #0000 var(--r),
+        red calc(var(--r) + 1px) calc(100% - 1px),
+        #0000
+      ),
+      conic-gradient(red calc(var(--p) * 1%), #0000 0%),
+      radial-gradient(circle at 50% 0.5em, var(--rond));
+    padding: 2.5em;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    -webkit-mask-composite: source-over, source-in;
+    mask-composite: add, intersect;
+    animation: rotate 6s ease-out infinite, moveX 1.5s ease-in-out -0.75s infinite alternate,
+      moveY 1.5s ease-in-out infinite alternate;
+    content: "";
+  }
+  
+  .loading-ring::after {
+    place-items: center;
+    -webkit-background-clip: text;
+    color: #0000;
+    mix-blend-mode: difference;
+    content: counter(p) "%";
+  }
+  
+  @keyframes pulse {
+    50%, 100% {
+      --p: 100;
+    }
+  }
+  
+  @keyframes rotate {
+    0%, 50% {
+      --r: calc(100% - 5em);
+    }
+    75%, 100% {
+      --r: -1px;
+    }
+  }
+  
+  @keyframes moveX {
+    100% {
+      --x: calc(100% - 2.5em);
+    }
+  }
+  
+  @keyframes moveY {
+    100% {
+      --y: calc(100% - 2.5em);
+    }
+  }
+  

@@ -14,9 +14,10 @@ const About = () => {
 
       <div className="decription-about">
         <p className="BBB">
-          I am Arijit Das, a final year student pursuing a combined degree in
+          Hi,I am Arijit Das, Full Stack Developer & final year student pursuing a combined degree in
           Information Technology and MBA from IIIT Gwalior. <br />
         </p>
+     
 
         <p className="RRR">
           <h1>Hello, I am Arijit <br /></h1>

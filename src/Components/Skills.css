@@ -52,7 +52,27 @@ text-align: center;
 .open .heading{
     border:none;
 }
+/* Add this to your existing styles */
 
+.skill-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3s ease; /* Adjust the duration as needed */
+  }
+  
+  .skills-headline.open .skill-list {
+    max-height: 500px; /* Adjust the max-height to your preference */
+  }
+  
+  .heading {
+    transition: background-color 10s ease, box-shadow 10s ease; /* Add transition to heading */
+  }
+  
+  .heading:hover {
+    background-color: #333; /* Add a background color on hover if desired */
+  }
+  
+  
 @media (max-width: 768px) {
     .Skills-container{
         display: flex;
