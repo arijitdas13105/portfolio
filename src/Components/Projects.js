@@ -18,7 +18,8 @@ const Projects = () => {
       projectUrl: "https://eggsquare.vercel.app/",
       projectName: "Egg Square",
       description:
-      "I designed and deployed a MERN-based egg delivery platform, optimizing user registration, secure payments, real-time notifications, and responsive design, resulting in increased customer satisfaction. Utilized Node.js, Express.js, MongoDB, Razorpay, React, Redux, Axios, and CSS for full-stack development"      technologies: [
+      "I designed and deployed a MERN-based egg delivery platform, optimizing user registration, secure payments, real-time notifications, and responsive design, resulting in increased customer satisfaction. Utilized Node.js, Express.js, MongoDB, Razorpay, React, Redux, Axios, and CSS for full-stack development" ,
+       technologies: [
         "MongoDB",
         "React",
         "Express",

@@ -23,7 +23,7 @@ import { Element } from "react-scroll";
 import Loading from "./Loading";
 
 const Main = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
