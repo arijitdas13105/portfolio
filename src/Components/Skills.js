@@ -37,8 +37,8 @@ const Skills = () => {
     ],
   };
 
-  const [languageOpen, setLanguageOpen] = useState(true);
-  const [framerworkOpen, setFramerworkOpen] = useState(false);
+  const [languageOpen, setLanguageOpen] = useState(false);
+  const [framerworkOpen, setFramerworkOpen] = useState(true);
   const [toolsOpen, setToolsOpen] = useState(false);
 
   const toggleLanguage = () => {
