@@ -21,4 +21,6 @@ export const images={
     eggSquare:require('../images/EggSquare.png'),
     netflixGPT:require('../images/netflixGPT.png'),
     tailwindCSS:require('../images/tailwindCSS.png'),
+    nextjs:require('../images/nextjs.png'),
+
 }

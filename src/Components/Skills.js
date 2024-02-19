@@ -21,6 +21,7 @@ const Skills = () => {
     ],
     framerwork: [
       { name: "ReactJS", images: images.react },
+      { name: "NextJS", images: images.nextjs },
       { name: "NodeJS", images: images.nodejs },
       { name: "ExpressJS", images: images.expressjs },
       { name: "MongoDB", images: images.mongodb },
@@ -56,7 +57,30 @@ const Skills = () => {
       <h1>Skills</h1>
       <div className="Skills-container">
         {/* //language */}
+        <div className={`skills-headline ${framerworkOpen ? "open" : ""}  `}>
+          <span className="heading" onClick={toggleFramerwork}>
+            framework
+            <FontAwesomeIcon
+              icon={framerworkOpen ? faCircleChevronDown : faCircleChevronUp}
+              // beatFade
+              className="updown-icon"
+            />
+          </span>
 
+          
+
+          {framerworkOpen && (
+            <div  className={`skill-list ${framerworkOpen?"open2":""}`}>
+              {skills.framerwork.map((skill, index) => (
+                <SkillSection
+                  key={index}
+                  name={skill.name}
+                  images={skill.images}
+                />
+              ))}
+            </div>
+          )}
+        </div>
         <div className={`skills-headline ${languageOpen ? "open" : ""}`}>
           <span className="heading" onClick={toggleLanguage}>
             language
@@ -99,30 +123,7 @@ const Skills = () => {
           )}
         </div>
         {/* //framework */}
-        <div className={`skills-headline ${framerworkOpen ? "open" : ""}  `}>
-          <span className="heading" onClick={toggleFramerwork}>
-            framework
-            <FontAwesomeIcon
-              icon={framerworkOpen ? faCircleChevronDown : faCircleChevronUp}
-              // beatFade
-              className="updown-icon"
-            />
-          </span>
-
-          
-
-          {framerworkOpen && (
-            <div  className={`skill-list ${framerworkOpen?"open2":""}`}>
-              {skills.framerwork.map((skill, index) => (
-                <SkillSection
-                  key={index}
-                  name={skill.name}
-                  images={skill.images}
-                />
-              ))}
-            </div>
-          )}
-        </div>
+       
 
         {/* // tools */}
 
