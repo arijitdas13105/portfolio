@@ -29,6 +29,22 @@ const Experience = () => {
                 Developed responsive dashboard and dynamic pages using React.js
                 and Core UI for an intuitive user experience.
               </li>
+
+
+              {/* <li>
+                    Streamlined web performance with React.js and Node.js,
+                    improving load times by 25% and extending user sessions by
+                    20%.
+                  </li>
+                  <li>
+                    Revitalized client UIs with React.js and Tailwind CSS,
+                    achieving a 30% boost in customer satisfaction.
+                  </li>
+                  <li>
+                    Proactively participated in the agile development lifecycle,
+                    from design to deployment, resulting in a fast acceleration
+                    of product time-to-market.
+                  </li> */}
             </ul>
           </p>
         </div>

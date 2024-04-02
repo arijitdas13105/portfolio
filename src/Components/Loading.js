@@ -12,13 +12,13 @@ const Loading = () => {
       <div className="loader">
         <div style={{ '--i': 1 }}>
           
-          <h2  className='load-text'>F</h2>
+          <h2  className='load-text'>.</h2>
           </div>
-        <div style={{ '--i': 2 }}><h2   className='load-text'>L</h2>
+        <div style={{ '--i': 2 }}><h2   className='load-text'>.</h2>
           </div>
-        <div style={{ '--i': 3 }}><h2  className='load-text'>U</h2>
+        <div style={{ '--i': 3 }}><h2  className='load-text'>.</h2>
           </div>
-        <div style={{ '--i': 4 }}><h2  className='load-text'>X</h2>
+        <div style={{ '--i': 4 }}><h2  className='load-text'>.</h2>
           </div>
       </div>
       {/* <div className="loading-ring"></div> */}

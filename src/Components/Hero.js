@@ -18,11 +18,13 @@ import {
   faInstagram,
   faLinkedin,
   faTwitter,
+  faUniregistry
 } from "@fortawesome/free-brands-svg-icons";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import RandomTextEffect from "./RandomTextEffect";
+import GraphemeSplitterComponent from "./GraphemeSplitterComponent";
 
 const Hero = () => {
   // const initialText="Arijit das"
@@ -36,10 +38,15 @@ const Hero = () => {
       <div className="Hero-left">
         <div className="hero-left-details">
         
-          <RandomTextEffect initialText="ARIJIT DAS" />
+          {/* <RandomTextEffect initialText="ARIJIT DAS" />
           <p className="SSS" style={{ color: "#8796AB", marginLeft: "15px" }}>
             Student @IIIT Gwalior
+          </p> */}
+          <GraphemeSplitterComponent/>
+          <p className="SSS" style={{ color: "#8796AB", }}>
+            Student @IIIT Gwalior
           </p>
+
         </div>
 
         <nav className="navigation">
@@ -114,7 +121,7 @@ const Hero = () => {
           >
             <FontAwesomeIcon icon={faTwitter} className="icon-details" />
           </a>
-          <a
+          {/* <a
             href="https://www.instagram.com/im_a_r_i/"
             target="_blank"
             rel="noopener noreferrer"
@@ -122,6 +129,16 @@ const Hero = () => {
             <FontAwesomeIcon
               className="fa-solid faInstagram icon-details"
               icon={faInstagram}
+            />
+          </a> */}
+          <a
+            href="https://drive.google.com/file/d/1FnjfhPU9Ay75JVuZwdcZc63hkceWpDBE/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              className="fa-solid faInstagram icon-details"
+              icon={faUniregistry}
             />
           </a>
         </div>
