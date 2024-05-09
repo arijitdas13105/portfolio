@@ -12,7 +12,8 @@ const Projects = () => {
   const projectsData = [
     {
       id: 1,
-      imageSrc:images.eggSquare,
+      imageSrc:'https://ucarecdn.com/8d3c059f-6033-4e2f-a16d-9bbbe3cba0f6/-/preview/1000x747/',
+      // imageSrc:images.eggSquare,
       // imageSrc:
       //   "https://www.freevector.com/uploads/vector/preview/282/FreeVector-Cracked-Egg-Vector.jpg",
       projectUrl: "https://eggsquare.vercel.app/",
@@ -42,7 +43,7 @@ const Projects = () => {
     // ,
     {
       id: 3,
-      imageSrc:images.netflixGPT,
+      imageSrc:'https://ucarecdn.com/b1be8083-a5ed-46fc-b5fd-ead6a10bea75/-/preview/1000x747/',
       // imageSrc:
       //   "https://www.fleetroot.com/wp-content/uploads/2020/08/how-to-create-a-powerful-car-rental-business-website-1.jpg",
       projectUrl: "https://netflixgptt.vercel.app/",

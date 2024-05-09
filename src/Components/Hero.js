@@ -18,7 +18,7 @@ import {
   faInstagram,
   faLinkedin,
   faTwitter,
-  faUniregistry
+  faUniregistry,
 } from "@fortawesome/free-brands-svg-icons";
 import Skills from "./Skills";
 import Contact from "./Contact";
@@ -29,7 +29,6 @@ import GraphemeSplitterComponent from "./GraphemeSplitterComponent";
 const Hero = () => {
   // const initialText="Arijit das"
   const [activeTab, setActiveTab] = useState("About");
-  
 
   return (
     <div className="Hero-container">
@@ -37,16 +36,14 @@ const Hero = () => {
 
       <div className="Hero-left">
         <div className="hero-left-details">
-        
           {/* <RandomTextEffect initialText="ARIJIT DAS" />
           <p className="SSS" style={{ color: "#8796AB", marginLeft: "15px" }}>
             Student @IIIT Gwalior
           </p> */}
-          <GraphemeSplitterComponent/>
-          <p className="SSS" style={{ color: "#8796AB", }}>
+          <GraphemeSplitterComponent />
+          <p className="SSS" style={{ color: "#8796AB" }}>
             Student @IIIT Gwalior
           </p>
-
         </div>
 
         <nav className="navigation">
