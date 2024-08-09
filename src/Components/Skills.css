@@ -1,0 +1,103 @@
+.Skillss{
+    margin-top: 100px;
+}
+.Skillss h1{
+     color:  #20B2AA;
+    padding: 0;
+    margin: 0;    
+    text-align: center;
+    margin-bottom: 60px;
+}
+.Skills-container{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    
+}
+.skills-headline{
+color: gray;
+
+flex: 1;
+text-align: center; 
+}
+
+.skill-list{
+    margin-top: 50px;
+}
+.updown-icon{
+  margin-top: 5px;
+  padding: 0;
+}
+ .open{
+   
+    
+     border: 1px solid #4b4d52;
+     border-radius: 10px;
+     padding: 10px;
+     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    
+}
+.heading{
+    border: 1px solid forestgreen;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+
+     padding: 5px 0px; 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.open .heading{
+    border:none;
+}
+/* Add this to your existing styles */
+
+.skill-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3s ease; /* Adjust the duration as needed */
+  }
+  
+  .skills-headline.open .skill-list {
+    max-height: 500px; /* Adjust the max-height to your preference */
+  }
+  
+  .heading {
+    transition: background-color 10s ease, box-shadow 10s ease; /* Add transition to heading */
+  }
+  
+  .heading:hover {
+    background-color: #333; /* Add a background color on hover if desired */
+  }
+  
+  
+@media (max-width: 768px) {
+    .Skills-container{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+        flex-direction: column;
+        
+    }
+    .tools{
+        color: gray;
+        flex: 1;
+        text-align: center; 
+    }
+    .skill-list{
+        margin-top: 50px;
+        padding: 0px 20px;
+    }
+    .open2{
+   
+    
+        border: 1px solid #7494e4;
+        border-radius: 10px;
+        padding: 20px 20px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        margin: 20px;
+   }
+}
