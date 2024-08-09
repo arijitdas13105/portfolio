@@ -5,6 +5,11 @@
     border-radius: 10px;
     border: 0.5px solid  #4b4d52;
 }
+.expeience-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .text{
   text-align: center;
   color:#20B2AA;
