@@ -15,7 +15,7 @@ const Experience = () => {
         <div className="experience-container">
 
 <div className="time-frame">
-  <p>Jun, 2024 - Aug, 2024</p>
+  <p>Jun, 2024 - Present</p>
 </div>
 <div className="work-details">
   <div className="work-description">
