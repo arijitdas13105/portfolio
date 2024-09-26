@@ -21,6 +21,7 @@ const Skills = () => {
     ],
     framerwork: [
       { name: "ReactJS", images: images.react },
+      { name: "React Native", images: images.react },
       { name: "NextJS", images: images.nextjs },
       { name: "NodeJS", images: images.nodejs },
       { name: "ExpressJS", images: images.expressjs },
