@@ -59,7 +59,7 @@ const Projects = () => {
     },
      {
       id: 4,
-      imageSrc:'https://ibb.co/pKzSJKc',
+      imageSrc:'https://i.ibb.co/QHN4rHL/Compress-JPEG-online-512x512-image.png',
       // imageSrc:
       //   "https://www.fleetroot.com/wp-content/uploads/2020/08/how-to-create-a-powerful-car-rental-business-website-1.jpg",
       projectUrl: "https://netflix-gpts-o6dp.vercel.app",
