@@ -57,6 +57,22 @@ const Projects = () => {
        "Tailwind CSS",
        "Responsive Design",],
     },
+     {
+      id: 4,
+      imageSrc:'https://ibb.co/pKzSJKc',
+      // imageSrc:
+      //   "https://www.fleetroot.com/wp-content/uploads/2020/08/how-to-create-a-powerful-car-rental-business-website-1.jpg",
+      projectUrl: "https://netflix-gpts-o6dp.vercel.app",
+      projectName: "Caloriemate",
+      description:
+      "Developed NetflixGPT with precision, leveraging React, Firebase, Redux Toolkit, and Tailwind CSS. Seamlessly integrated GPT for personalized movie recommendations, prioritizing meticulous code structure, reusability, and maintainability.Elevating user experience through cutting-edge technology and meticulous development",
+      technologies:
+       [ "React",
+       "Firebase",
+       "Redux Toolkit",
+       "Tailwind CSS",
+       "Responsive Design",],
+    },
   ];
   return (
     <>
