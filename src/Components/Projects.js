@@ -10,6 +10,22 @@ import { images } from "./images";
 
 const Projects = () => {
   const projectsData = [
+
+     {
+      id: 4,
+      imageSrc:'https://i.ibb.co/F5zkxw7/graphic.png',
+      // imageSrc:
+      //   "https://www.fleetroot.com/wp-content/uploads/2020/08/how-to-create-a-powerful-car-rental-business-website-1.jpg",
+      projectUrl: "https://netflix-gpts-o6dp.vercel.app",
+      projectName: "CalorieMate: AI Fitness Tracker App",
+      description:
+      "CalorieMate Mobile App helps you track calories, monitor workouts, log meals, and view detailed reports. Achieve fitness goals with personalized insights and intuitive charts for a healthier lifestyle.",
+      technologies:
+       [ "React Native ",
+       "React Navigation",
+       "AsyncStorage",
+       "Responsive Design",],
+    },
     {
       id: 1,
       imageSrc:'https://ucarecdn.com/8d3c059f-6033-4e2f-a16d-9bbbe3cba0f6/-/preview/1000x747/',
@@ -57,22 +73,7 @@ const Projects = () => {
        "Tailwind CSS",
        "Responsive Design",],
     },
-     {
-      id: 4,
-      imageSrc:'https://i.ibb.co/QHN4rHL/Compress-JPEG-online-512x512-image.png',
-      // imageSrc:
-      //   "https://www.fleetroot.com/wp-content/uploads/2020/08/how-to-create-a-powerful-car-rental-business-website-1.jpg",
-      projectUrl: "https://netflix-gpts-o6dp.vercel.app",
-      projectName: "Caloriemate",
-      description:
-      "Developed NetflixGPT with precision, leveraging React, Firebase, Redux Toolkit, and Tailwind CSS. Seamlessly integrated GPT for personalized movie recommendations, prioritizing meticulous code structure, reusability, and maintainability.Elevating user experience through cutting-edge technology and meticulous development",
-      technologies:
-       [ "React",
-       "Firebase",
-       "Redux Toolkit",
-       "Tailwind CSS",
-       "Responsive Design",],
-    },
+    
   ];
   return (
     <>
